@@ -21,6 +21,10 @@ git clone https://github.com/SidharthLala1/owsap_juice_cypress_assignment.git
 # move to the dir
 cd owsap_juice_cypress_assignment
 
+# Create .env file at root with below values
+CYPRESS_APP_BASE_URL=https://juice-shop.herokuapp.com
+CYPRESS_APP_ENV=DEV
+
 # Install Cypress dependencies
 npm install
 
