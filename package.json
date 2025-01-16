@@ -1,0 +1,51 @@
+{
+  "name": "soar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OWSAP juice E2E testing",
+  "scripts": {
+    "lint": "eslint './**'",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:light": "cypress run --config video=false,screenshotOnRunFailure=false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SidharthLala1/owsap_juice_cypress_assignment.git"
+  },
+  "keywords": [
+    "pokhran",
+    "e2e",
+    "testing"
+  ],
+  "author": "sidharth",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/SidharthLala1/owsap_juice_cypress_assignment#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "@types/eslint-config-prettier": "^6.11.0",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.7.3",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "cypress": "^13.17.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-map": "^1.21.1",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "dotenv": "^16.3.1"
+  }
+}
